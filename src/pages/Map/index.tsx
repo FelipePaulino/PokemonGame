@@ -10,7 +10,7 @@ import searchTooltip from "../../assets/images/searchTooltip.png";
 import searchingTooltip from "../../assets/images/searchingTooltip.png";
 import tooltipError from "../../assets/images/tooltipError.png";
 import Modal from "../../components/Modal";
-import { usePokemon } from "../../Provider/context";
+import { usePokemon } from "../../context";
 import NewModal from "../../components/NewModal";
 import { Data, PokemonType } from "../../types/pokemon";
 

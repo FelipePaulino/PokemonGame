@@ -8,7 +8,7 @@ import Button from "../Button";
 import { typesTrasnlations } from "../../utills/typesTranslation";
 import { typePower } from "../../utills/typePower";
 import { Data, PokemonType } from "../../types/pokemon";
-import { usePokemon } from "../../Provider/context";
+import { usePokemon } from "../../context";
 import DropdownModify from "../DropdownModify";
 import Statistics from "../Statistics";
 import Sections from "../Sections";

@@ -3,7 +3,7 @@ import Button from "../Button";
 import pokeball from "../../assets/images/pokeball.png";
 import iconPlus from "../../assets/images/plus.png";
 import * as S from "./styled";
-import { usePokemon } from "../../Provider/context";
+import { usePokemon } from "../../context";
 import { Data, PokemonType } from "../../types/pokemon";
 
 interface SidebarProps {

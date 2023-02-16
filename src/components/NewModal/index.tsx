@@ -7,7 +7,7 @@ import InputText from "../InputText";
 import DropdownPage from "../Dropdown";
 import InputNumber from "../InputNumber";
 import { options } from "../../utills/options";
-import { usePokemon } from "../../Provider/context";
+import { usePokemon } from "../../context";
 import { Data, DataAbilities, DataUnion } from "../../types/pokemon";
 import iconPlus from "../../assets/images/plus.png";
 import TitleTopics from "../TitleTopics";

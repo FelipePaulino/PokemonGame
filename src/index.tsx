@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import PokemonContextProvider from "./Provider/context";
+import PokemonContextProvider from "./context";
 
 ReactDOM.render(
   <PokemonContextProvider>
