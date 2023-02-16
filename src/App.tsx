@@ -4,12 +4,10 @@ import PokemonContextProvider from "./Provider/context";
 
 function App() {
   return (
-    <>
-      <PokemonContextProvider>
-        <GlobalStyled />
-        <Routes />
-      </PokemonContextProvider>
-    </>
+    <PokemonContextProvider>
+      <GlobalStyled />
+      <Routes />
+    </PokemonContextProvider>
   );
 }
 

@@ -15,7 +15,7 @@ import Sections from "../Sections";
 import Status from "../Status";
 import TitleTopics from "../TitleTopics";
 
-interface Modal {
+interface ModalProps {
   pokemon: PokemonType;
   setPokemon: React.Dispatch<React.SetStateAction<PokemonType | Data>>;
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
@@ -31,7 +31,7 @@ export default function Modal({
   goPokeball,
   isMyPokemon,
   removePokemon,
-}: Modal) {
+}: ModalProps) {
   const [edit, setEdit] = useState(false);
   const [typing, setTyping] = useState<string>("");
   const { pokemons, setPokemons } = usePokemon();
@@ -68,7 +68,6 @@ export default function Modal({
     localStorage.setItem("pokemon", JSON.stringify(pokemons));
   }, [customPokemon]);
 
-  console.log(pokemon, "pokemon");
   const existingPokemonHp =
     pokemon?.id !== 0 ? pokemon?.stats[0].base_stat : undefined;
   const existingPokemonHeigth = pokemon?.id !== 0 ? pokemon?.height : undefined;
@@ -92,7 +91,7 @@ export default function Modal({
   const existingPokemonSpeed =
     pokemon?.id !== 0 ? pokemon?.stats[5].base_stat : undefined;
   const creatingPokemonSpeed = pokemon?.id === 0 ? pokemon?.speed : undefined;
-  console.log(pokemon?.id, "pokemon?.id");
+
   return (
     <S.Modal>
       <S.Form>

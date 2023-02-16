@@ -6,7 +6,7 @@ import * as S from "./styled";
 import { usePokemon } from "../../Provider/context";
 import { Data, PokemonType } from "../../types/pokemon";
 
-interface Sidebar {
+interface SidebarProps {
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
   setPokemon: React.Dispatch<React.SetStateAction<PokemonType | Data>>;
   setIsMyPokemon: React.Dispatch<React.SetStateAction<boolean>>;
@@ -18,7 +18,7 @@ export default function Sidebar({
   setPokemon,
   setIsMyPokemon,
   setOpenCreationModal,
-}: Sidebar) {
+}: SidebarProps) {
   const { pokemons } = usePokemon();
 
   const existPokemonCreate = pokemons.find((item) => item.id === 0);

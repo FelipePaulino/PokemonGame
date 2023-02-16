@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { DataUnion } from "../../types/pokemon";
 import * as S from "./styled";
 
-interface InputText {
+interface InputTextProps {
   className?: string;
   label?: string;
   type?: string;
@@ -22,7 +22,7 @@ export default function InputText({
   data,
   setData,
   invalidated,
-}: InputText) {
+}: InputTextProps) {
   const [alert, setAlert] = useState(false);
 
   useEffect(() => {

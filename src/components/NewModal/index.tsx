@@ -12,11 +12,11 @@ import { Data, DataAbilities, DataUnion } from "../../types/pokemon";
 import iconPlus from "../../assets/images/plus.png";
 import TitleTopics from "../TitleTopics";
 
-interface NewModal {
+interface NewModalProps {
   setOpenCreationModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default function NewModal({ setOpenCreationModal }: NewModal) {
+export default function NewModal({ setOpenCreationModal }: NewModalProps) {
   const { pokemons, setPokemons } = usePokemon();
   const [selectedImage, setSelectedImage] = useState<any>();
   const [dataAbilities, setDataAbilities] = useState<DataAbilities>({
@@ -90,13 +90,6 @@ export default function NewModal({ setOpenCreationModal }: NewModal) {
       });
     }
   }, [selectedImage]);
-
-  // let photo = document.getElementById('imgPhoto');
-  // let file = document.getElementById('flImage');
-
-  // photo?.addEventListener('click', () => {
-  // file?.click();
-  // });
 
   return (
     <S.Modal>

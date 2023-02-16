@@ -6,7 +6,7 @@ import shield from "../../assets/images/shield.png";
 import speed from "../../assets/images/speed.png";
 import sword from "../../assets/images/sword.png";
 
-interface InputNumber {
+interface InputNumberProps {
   className?: string;
   label: string;
   placeholder: string;
@@ -28,7 +28,7 @@ export default function InputNumber({
   setData,
   invalidated,
   icon,
-}: InputNumber) {
+}: InputNumberProps) {
   const [alert, setAlert] = useState(false);
   const [number, setNumber] = useState<string | number>("");
 
